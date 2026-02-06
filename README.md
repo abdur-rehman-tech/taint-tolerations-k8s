@@ -36,3 +36,8 @@ kubectl create ns nginx
 
 To apply toleration use pod.yml:
 kubectl apply -f pod.yml 
+
+
+To remove taint the nodes:
+kubectl taint nodes node-worker1 prod=true:NoSchedule-
+kubectl taint nodes node-worker2 prod=true:NoSchedule-
